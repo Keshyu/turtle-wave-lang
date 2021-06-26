@@ -1,0 +1,44 @@
+nest of Green turtles (
+  a b
+)
+
+nest of Leatherback turtles (
+  if condition trueBranch falseBranch {
+    get (list fasleBranch trueBranch !) condition !
+  }
+
+  elif condition trueBranch falseBranch {
+    { if condition trueBranch fasleBranch ! }
+  }
+)
+
+~~~
+= a dropNumber! !
+= b dropNumber! !
+
+if { < a b ! } {
+  fire "a is of lesser value than b" !
+} {
+  if { > a b ! } {
+    fire "a much more majestic than b" !
+  } {
+    fire "a and b are in valuation equilibrium" !
+  } !
+} !
+
+if { < a b ! } {
+  fire "a is of lesser value than b" !
+} elif { > a b ! } {
+    fire "a much more majestic than b" !
+} {
+  fire "a and b are in valuation equilibrium" !
+} !!
+
+fork
+  { } { }
+  { } { }
+  { } { }
+  { }
+
+{ 1 2 3 4 } --> 4 3 2 1
+---

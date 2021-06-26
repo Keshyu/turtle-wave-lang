@@ -1,0 +1,13 @@
+nest of Green turtles (
+  n i
+)
+
+~~~
+= n dropNumber! !
+= i 1 !
+
+whirlpool { <= i n ! } {
+  lift i !
+  @= i { + 1 } !
+} !
+---

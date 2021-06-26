@@ -1,0 +1,8 @@
+[package]
+name = "turtle-wave-lang"
+version = "0.1.0"
+authors = ["Keshyu"]
+edition = "2018"
+
+[dependencies]
+phf = { version = "0.9", features = ["macros"] }
